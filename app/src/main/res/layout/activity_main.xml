@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F1F1"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="20dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/lblAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altura"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtAltura"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese su altura"
+            android:textColorHint="#6E5757"
+            android:inputType="numberDecimal"
+            android:textColor="#4A5151" />
+
+        <TextView
+            android:id="@+id/lblPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Peso"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese su peso (kg)"
+            android:textColorHint="#875555"
+            android:inputType="numberDecimal"
+            android:textColor="#3F4747">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblResultado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9A600A"
+            android:text="Calcular"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#51AA21"
+            android:text="Limpiar"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Cerrar aplicación"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt">
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
